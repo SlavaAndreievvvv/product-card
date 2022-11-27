@@ -1,0 +1,42 @@
+.row-star {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+    &--mar {
+      margin-bottom: 32px;
+      margin-top: 12px;
+    }
+}
+.row-star__wrapper {
+  @include svg(14px);
+  position: relative;
+  cursor: pointer;
+
+  &--mr {
+    margin-right: 8px;
+  }
+}
+
+.row-star__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+    &:checked + .row-star__star {
+      transform: scale(1.2);
+    }
+}
+
+.row-star--fill {
+  fill: $color-brown;
+}
+.row-star--half {
+  @include svg(14px);
+}
+.row-star--empty {
+  @include svg(14px);
+  fill: $color-white;
+  stroke: $color-brown;
+}
+

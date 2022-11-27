@@ -1,0 +1,6 @@
+.title {
+  @include text(rem(20px), 600, $color-black, 150%);
+}
+.description__title {
+  margin-bottom: 12px;
+}
