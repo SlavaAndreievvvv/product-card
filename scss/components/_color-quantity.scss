@@ -33,6 +33,10 @@
     @include svg(16px);
     position: relative;
     cursor: pointer;
+     
+    &--mr {
+      margin-right: 16px;
+    }
   }
   &__radio {
     position: absolute;
@@ -52,20 +56,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.row-colors__wrapper--width::after {
-  content: '';
-  position: absolute;
-  @include svg(24px);
-  border: 2px solid #BDBDBD;
-  border-radius: 50%;
-  left: -5.8px;
-  top: -5.7px;
-}
-
-.row-colors__wrapper--mr {
-  margin-right: 16px;
+    &:after {
+      content: '';
+      position: absolute;
+      @include svg(24px);
+      border: 2px solid #BDBDBD;
+      border-radius: 50%;
+      left: -5.8px;
+      top: -5.7px;
+    }
 }
 
 // Quantity

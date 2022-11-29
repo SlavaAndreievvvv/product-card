@@ -652,7 +652,6 @@ textarea {
 
 html {
   font-size: 10px;
-  background-image: url(../images/BG.png);
   min-width: 100vw;
   min-height: 100vh;
 }
@@ -690,10 +689,17 @@ body {
   position: relative;
 }
 
+.card {
+  max-width: 480px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 .wrapper-cross {
   position: absolute;
-  top: 21px;
-  left: 575px;
+  top: -20px;
+  right: -20px;
 }
 
 .cross {
@@ -707,12 +713,6 @@ body {
 }
 .cross__icon {
   fill: #8c8888;
-}
-
-.card {
-  max-width: 480px;
-  width: 100%;
-  height: 100%;
 }
 
 .wrapper-img {
@@ -752,7 +752,6 @@ body {
 .description {
   margin-bottom: 36px;
 }
-
 .description__price {
   font-size: 1.8rem;
   font-weight: 400;
@@ -863,6 +862,9 @@ body {
   position: relative;
   cursor: pointer;
 }
+.row-colors__wrapper--mr {
+  margin-right: 16px;
+}
 .row-colors__radio {
   position: absolute;
   z-index: -1;
@@ -882,8 +884,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.row-colors__wrapper--width::after {
+.row-colors__wrapper--width:after {
   content: "";
   position: absolute;
   width: 24px;
@@ -892,10 +893,6 @@ body {
   border-radius: 50%;
   left: -5.8px;
   top: -5.7px;
-}
-
-.row-colors__wrapper--mr {
-  margin-right: 16px;
 }
 
 .quantity {
@@ -949,7 +946,7 @@ body {
   transform: scale(1.2);
 }
 
-.row-butoon {
+.row-button {
   width: 100%;
   display: inline-flex;
   align-items: center;
