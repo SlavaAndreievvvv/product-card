@@ -737,6 +737,27 @@ body {
 .wrapper-img--mb {
   margin-bottom: 14px;
 }
+.wrapper-img__arrow-left {
+  position: absolute;
+  top: 128px;
+  left: 15px;
+  height: 14px;
+  width: 7px;
+}
+.wrapper-img__arrow-right {
+  position: absolute;
+  top: 128px;
+  right: 15px;
+  height: 14px;
+  width: 7px;
+}
+.wrapper-img__line {
+  position: absolute;
+  bottom: 12px;
+  left: 45px;
+  height: 1px;
+  width: 390px;
+}
 
 .title {
   font-size: 2rem;
@@ -804,22 +825,6 @@ body {
 }
 .row-star__radio:checked + .row-star__star {
   transform: scale(1.2);
-}
-
-.row-star--fill {
-  fill: #4F4F4F;
-}
-
-.row-star--half {
-  width: 14px;
-  height: 14px;
-}
-
-.row-star--empty {
-  width: 14px;
-  height: 14px;
-  fill: #FDFDFD;
-  stroke: #4F4F4F;
 }
 
 .color-quantity {

@@ -28,15 +28,3 @@
     }
 }
 
-.row-star--fill {
-  fill: $color-brown;
-}
-.row-star--half {
-  @include svg(14px);
-}
-.row-star--empty {
-  @include svg(14px);
-  fill: $color-white;
-  stroke: $color-brown;
-}
-
