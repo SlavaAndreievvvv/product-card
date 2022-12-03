@@ -867,37 +867,49 @@ body {
   position: relative;
   cursor: pointer;
 }
-.row-colors__wrapper--mr {
-  margin-right: 16px;
+.row-colors__wrapper--not-mr {
+  margin-right: 0;
 }
 .row-colors__radio {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.row-colors__radio:checked + .row-colors__img {
-  transform: scale(1.2);
+.row-colors__radio:checked ~ .row-colors__circle {
+  opacity: 1;
 }
 
-.row-colors__wrapper--width {
+.row-colors__wrapper {
   width: 16px;
   height: 16px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 16px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.row-colors__wrapper--width:after {
-  content: "";
+
+.row-colors__circle {
   position: absolute;
   width: 24px;
   height: 24px;
   border: 2px solid #BDBDBD;
   border-radius: 50%;
-  left: -5.8px;
-  top: -5.7px;
+  left: -5.777px;
+  top: -5.3px;
+  opacity: 0;
+}
+.row-colors__circle--white {
+  border: 2px solid #e0e0e0;
+}
+.row-colors__circle--brown {
+  border: 2px solid #814038;
+}
+.row-colors__circle--darkblue {
+  border: 2px solid #3d4b64;
+}
+.row-colors__circle--black {
+  border: 2px solid #383633;
 }
 
 .quantity {

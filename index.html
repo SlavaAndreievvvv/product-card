@@ -54,11 +54,7 @@
                 name="star"
                 value="one"
               />
-              <img
-                class="row-star__star row-star--fill"
-                src="./images/star.svg"
-                alt="star"
-              />
+              <img class="row-star__star" src="./images/star.svg" alt="star" />
             </label>
 
             <label class="row-star__wrapper row-star__wrapper--mr" for="two">
@@ -69,11 +65,7 @@
                 name="star"
                 value="two"
               />
-              <img
-                class="row-star__star row-star--fill"
-                src="./images/star.svg"
-                alt="star"
-              />
+              <img class="row-star__star" src="./images/star.svg" alt="star" />
             </label>
 
             <label class="row-star__wrapper row-star__wrapper--mr" for="three">
@@ -84,11 +76,7 @@
                 name="star"
                 value="three"
               />
-              <img
-                class="row-star__star row-star--fill"
-                src="./images/star.svg"
-                alt="star"
-              />
+              <img class="row-star__star" src="./images/star.svg" alt="star" />
             </label>
 
             <label class="row-star__wrapper row-star__wrapper--mr" for="four">
@@ -99,11 +87,7 @@
                 name="star"
                 value="four"
               />
-              <img
-                class="row-star__star row-star--fill"
-                src="./images/star.svg"
-                alt="star"
-              />
+              <img class="row-star__star" src="./images/star.svg" alt="star" />
             </label>
 
             <label class="row-star__wrapper" for="five">
@@ -114,11 +98,7 @@
                 name="star"
                 value="five"
               />
-              <img
-                class="row-star__star row-star--fill"
-                src="./images/star.svg"
-                alt="star"
-              />
+              <img class="row-star__star" src="./images/star.svg" alt="star" />
             </label>
           </div>
           <p class="caption description__caption">Description</p>
@@ -134,10 +114,7 @@
           <div class="color color-quantity__color">
             <p class="color__text color-quantity__text">Color:</p>
             <div class="row-colors">
-              <label
-                class="row-colors__wrapper row-colors__wrapper--mr"
-                for="white"
-              >
+              <label class="row-colors__wrapper" for="white">
                 <input
                   class="row-colors__radio"
                   type="radio"
@@ -154,6 +131,9 @@
                 >
                   <circle cx="8" cy="8" r="7.5" fill="white" stroke="#E0E0E0" />
                 </svg>
+                <span
+                  class="row-colors__circle row-colors__circle--white"
+                ></span>
               </label>
 
               <label class="row-colors__wrapper" for="brown">
@@ -174,12 +154,12 @@
                 >
                   <circle cx="8" cy="8" r="8" fill="#814038" />
                 </svg>
+                <span
+                  class="row-colors__circle row-colors__circle--brown"
+                ></span>
               </label>
 
-              <label
-                class="row-colors__wrapper row-colors__wrapper--width"
-                for="grey"
-              >
+              <label class="row-colors__wrapper" for="grey">
                 <input
                   class="row-colors__radio"
                   type="radio"
@@ -197,12 +177,10 @@
                 >
                   <circle cx="8" cy="8" r="8" fill="#A3A2A1" />
                 </svg>
+                <span class="row-colors__circle"></span>
               </label>
 
-              <label
-                class="row-colors__wrapper row-colors__wrapper--mr"
-                for="darkblue"
-              >
+              <label class="row-colors__wrapper" for="darkblue">
                 <input
                   class="row-colors__radio"
                   type="radio"
@@ -220,9 +198,15 @@
                 >
                   <circle cx="8" cy="8" r="8" fill="#3D4B64" />
                 </svg>
+                <span
+                  class="row-colors__circle row-colors__circle--darkblue"
+                ></span>
               </label>
 
-              <label class="row-colors__wrapper" for="black">
+              <label
+                class="row-colors__wrapper row-colors__wrapper--not-mr"
+                for="black"
+              >
                 <input
                   class="row-colors__radio"
                   type="radio"
@@ -240,6 +224,9 @@
                 >
                   <circle cx="8" cy="8" r="8" fill="#383633" />
                 </svg>
+                <span
+                  class="row-colors__circle row-colors__circle--black"
+                ></span>
               </label>
             </div>
           </div>
