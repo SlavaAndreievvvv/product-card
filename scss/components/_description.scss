@@ -1,0 +1,17 @@
+.description{
+  margin-bottom: 36px;
+    &__price {
+      @include text(rem(18px), 400, $color-black, 150%);
+    }
+}
+
+.caption {
+  @include text(rem(10px), 600, $color-black, 165%);
+}
+  .description__caption {
+    margin-bottom: 8px;
+  }
+
+.text {
+  @include text(rem(10px), 300, $color-black, 165%);
+}

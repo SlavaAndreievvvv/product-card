@@ -1,0 +1,46 @@
+.row-button {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button {
+  height: 40px;
+  max-width: 228px;
+  width: 100%;
+  background: $color-brown;
+  border-radius: 4px;   
+  border: none;
+  outline: none;
+  transition: all .3s ease;
+    &:hover {
+      background: $color-brown-2;
+    }
+    &:focus {
+      box-shadow: 0 0 0 1px $color-yellow;
+
+    }
+
+    &--secondary {
+      background-color: white;
+      outline: 1px solid $color-brown;
+
+      &:hover {
+        background: $color-white;
+        text-decoration: underline;
+      }
+      &:focus {
+        outline: 1px solid $color-brown;
+        box-shadow: 0 0 0 2px $color-yellow;
+      }
+    }
+
+    &__text {
+      @include text(rem(14px), 500, $color-white, 130%);
+        &--secondary {
+          color: $color-brown;
+          position: relative;
+        }
+    }
+}

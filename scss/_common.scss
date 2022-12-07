@@ -1,0 +1,17 @@
+html {
+  font-size: $base-font-size;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+  font-family: $primary-font;
+}
+
+body {
+  padding: 20px;
+}
